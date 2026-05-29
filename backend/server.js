@@ -1,3 +1,4 @@
+console.log("VERSION: hv-chat-box CORS enabled"); // 👈 add this
 import express from "express";
 import "dotenv/config";
 import cors from "cors";
