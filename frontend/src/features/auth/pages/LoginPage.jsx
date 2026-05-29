@@ -39,11 +39,17 @@ const LoginPage = () => {
 
   const switchToLogin = () => {
     setView(VIEWS.LOGIN)
+    setFullName('')
+    setEmail('')
+    setPassword('')
     setBio('')
   }
 
   const switchToSignup = () => {
     setView(VIEWS.SIGNUP)
+    setFullName('')
+    setEmail('')
+    setPassword('')
     setBio('')
   }
 
