@@ -38,7 +38,7 @@ const BrandPanel = () => {
                 </div>
                 <span
                     className='text-2xl font-bold text-white'>
-                    ChatNest
+                    ChatBox
                 </span>
             </div>
         </>
