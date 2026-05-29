@@ -1,7 +1,10 @@
 import { createContext, useContext, useEffect, useRef, useState } from "react";
 import { AuthContext } from "../../auth/context/AuthContext";
 import toast from "react-hot-toast";
+import axios from "axios";
 
+const backendUrl = import.meta.env.VITE_BACKEND_URL;
+axios.defaults.baseURL = backendUrl;
 
 export const ChatContext = createContext();
 
