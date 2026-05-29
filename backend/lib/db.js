@@ -14,6 +14,8 @@ export const connectDB = async () => {
             family: 4,
         });
         console.log('Connected to DB');
+        console.log('Connected to DB:', mongoose.connection.db.databaseName);
+
     } catch (error) {
         console.error('MongoDB connection failed:', error.message || error);
         throw error;
