@@ -15,7 +15,7 @@ const server = http.createServer(app)
 export const io = new Server(server, {
     cors: {
         origin: [
-            "https://chatbox-lul9.onrender.com",
+            "https://chatbox-1kwo.onrender.com",
             "http://localhost:5173"
         ]
     }
