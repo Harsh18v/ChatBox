@@ -15,7 +15,7 @@ const server = http.createServer(app)
 export const io = new Server(server, {
     cors: {
         origin: [
-            "https://chatbox-1kwo.onrender.com",
+            "https://hv-chat-box.vercel.app" ,
             "http://localhost:5173"
         ]
     }
