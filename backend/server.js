@@ -11,15 +11,19 @@ import { Server } from "socket.io";
 const app = express();
 const server = http.createServer(app)
 
-// Initialize socket.io server
+const allowedOrigins = [
+    "http://localhost:5173",
+    "https://hv-chat-box.vercel.app"
+];
+
+// Socket.io CORS
 export const io = new Server(server, {
     cors: {
-        origin: [
-            "https://hv-chat-box.vercel.app" ,
-            "http://localhost:5173"
-        ]
+        origin: allowedOrigins
     }
-})
+});
+
+
 
 // Store online users
 export const userSocketMap = {}; // { userId: socketId }
@@ -43,7 +47,11 @@ io.on("connection", (socket) => {
 
 // Middleware setup
 app.use(express.json({ limit: "4mb" }));
-app.use(cors());
+// Express CORS
+app.use(cors({
+    origin: allowedOrigins,
+    credentials: true
+}));
 
 
 // Routes setup
