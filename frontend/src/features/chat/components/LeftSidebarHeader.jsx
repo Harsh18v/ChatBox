@@ -26,7 +26,7 @@ const SidebarHeader = () => {
                             stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                 </div>
-                ChatBox
+                ChatNest
             </span>
 
             <div className='relative group'>

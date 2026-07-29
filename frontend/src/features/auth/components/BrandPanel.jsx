@@ -15,7 +15,7 @@ const BrandPanel = () => {
 
                 <h1
                     className='text-5xl font-bold text-white leading-tight mb-4'>
-                    ChatBox
+                    ChatNest
                 </h1>
 
                 <p className='text-xl text-neutral-300 leading-relaxed max-w-md mb-2'>
